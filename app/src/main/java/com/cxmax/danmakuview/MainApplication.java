@@ -1,7 +1,6 @@
 package com.cxmax.danmakuview;
 
 import android.app.Application;
-import com.squareup.leakcanary.LeakCanary;
 /**
  * @describe :
  * @usage :
@@ -15,6 +14,7 @@ public class MainApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        /*
         if (BuildConfig.DEBUG && true) {
             if (LeakCanary.isInAnalyzerProcess(this)) {
                 // This process is dedicated to LeakCanary for heap analysis.
@@ -23,5 +23,6 @@ public class MainApplication extends Application {
             }
             LeakCanary.install(this);
         }
+         */
     }
 }
